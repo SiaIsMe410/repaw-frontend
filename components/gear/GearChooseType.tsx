@@ -33,9 +33,7 @@ export default function GearChooseType() {
       <motion.div
         initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.9 }}
         style={{ position: 'relative', marginInline: '0rem', marginBottom: '5rem' }}>
-        <div style={{ width: '100%', aspectRatio: '16/7', background: '#f5f5f5', border: '1px solid rgba(0,0,0,0.07)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <span style={{ fontSize: '0.62rem', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(0,0,0,0.2)' }}>运动场景图</span>
-        </div>
+        <div id="diy-scene" style={{ width: '100%', aspectRatio: '16/7', background: '#000', backgroundImage: 'url(/制作.png)', backgroundSize: '80%', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }} />
         <motion.div
           initial={{ opacity: 0, x: -24 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.2 }}
           style={{ position: 'absolute', left: '2.5rem', top: '50%', transform: 'translateY(-50%)', background: 'rgba(255,255,255,0.95)', backdropFilter: 'blur(16px)', border: '1px solid rgba(0,0,0,0.1)', padding: '1.5rem', width: 220, zIndex: 2, boxShadow: '0 8px 32px rgba(0,0,0,0.1)' }}>

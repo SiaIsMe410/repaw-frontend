@@ -11,6 +11,7 @@ const paths = [
     tag: '低门槛 · 高参与度',
     img: '/版型.png',
     cardBg: 'rgba(255,255,255,0.05)',
+    link: '/gear#diy-scene',
   },
   {
     num: '02',
@@ -98,7 +99,8 @@ export default function WorkshopSection() {
         {paths.map((p, i) => (
           <motion.div key={p.num} {...fadeUp(0.1 + i * 0.1)}
             className="relative overflow-hidden group"
-            style={{ background: p.cardBg, minHeight: 380 }}>
+            style={{ background: p.cardBg, minHeight: 380, cursor: p.link ? 'pointer' : 'default' }}
+            onClick={p.link ? () => window.location.href = p.link! : undefined}>
 
             {/* 背景图 */}
             <div className="absolute inset-0 pointer-events-none transition-transform duration-700 group-hover:scale-105"
