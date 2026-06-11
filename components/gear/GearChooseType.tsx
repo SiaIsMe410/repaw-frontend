@@ -19,14 +19,14 @@ export default function GearChooseType() {
         initial={{ opacity: 0, y: 28 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}
         style={{ textAlign: 'center', padding: '4rem 3rem 3.5rem', maxWidth: 620, margin: '0 auto' }}>
         <h2 style={{ fontSize: 'clamp(24px,2.8vw,36px)', fontWeight: 700, lineHeight: 1.2, marginBottom: '0.9rem', color: '#111' }}>
-          选择运动类型
+          你的布料，我们的版型
         </h2>
         <p style={{ fontSize: '1rem', fontWeight: 400, lineHeight: 1.65, color: 'rgba(0,0,0,0.5)', marginBottom: '2rem' }}>
-          无论是城市夜跑、山野徒步，还是草坪飞盘，从选择你们的运动方式开始，为宠物定制专属装备。
+          将一件旧衣物裁切成半成品，附赠专业版型图，自己动手剪裁拼接成宠物装备——每一刀都是你的故事延续。
         </p>
         <Link href="/shop" className="font-ui no-underline inline-block hover:-translate-y-0.5 transition-transform"
           style={{ fontSize: '0.88rem', fontWeight: 700, padding: '0.9rem 2.5rem', background: '#111', color: '#fff', borderRadius: '100px' }}>
-          开始定制
+          立即定制
         </Link>
       </motion.div>
 
